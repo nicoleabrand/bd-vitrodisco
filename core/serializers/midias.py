@@ -1,8 +1,8 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.models import Produto
+from core.models import Midias
 
-class ProdutoSerializer(ModelSerializer):
+class MidiasSerializer(ModelSerializer):
     class Meta:
-        model = Produto
+        model = Midias
         fields = "__all__"

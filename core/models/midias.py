@@ -1,8 +1,8 @@
 from django.db import models
 
-from core.views import artista, genero, gravadora
 
-class Produto(models.Model):
+
+class Midias(models.Model):
     nome = models.CharField(max_length=250)
     tracks = models.IntegerField()
     rotacao = models.CharField(max_length=4, blank=True, null=True)
@@ -12,9 +12,9 @@ class Produto(models.Model):
     descricao = models.CharField(max_length=250)
     preco = models.CharField(max_length=6)
     estoque = models.IntegerField()
-    artista = models.ForeignKey(artista)
-    gravadora = models.ForeignKey(gravadora)
-    genero = models.ForeignKey(genero)
+    artista = models.ForeignKey('core.Artista', on_delete=models.CASCADE)
+    gravadora = models.ForeignKey('core.Gravadora', on_delete=models.CASCADE)
+    genero = models.ForeignKey('core.Genero', on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.nome}"

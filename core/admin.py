@@ -52,8 +52,7 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(models.User, UserAdmin)
-admin.site.register(models.Disco)
-admin.site.register(models.Cd)
 admin.site.register(models.Artista)
 admin.site.register(models.Gravadora)
 admin.site.register(models.Genero)
+admin.site.register(models.Midias)
