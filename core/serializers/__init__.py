@@ -1,6 +1,5 @@
 from .user import UserSerializer
-from .disco import DiscoSerializer
-from .cd import CdSerializer
+from .produto import ProdutoSerializer
 from .artista import ArtistaSerializer
 from .gravadora import GravadoraSerializer
 from .genero import GeneroSerializer
