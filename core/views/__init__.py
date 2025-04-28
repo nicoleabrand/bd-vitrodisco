@@ -4,3 +4,4 @@ from .artista import ArtistaViewSet
 from .gravadora import GravadoraViewSet
 from .genero import GeneroViewSet
 from .formaPagamento import FormaPagamentoViewSet
+from .endereco import EnderecoViewSet
